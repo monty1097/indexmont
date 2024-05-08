@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly aria-live="assertive">
+        <div class="buttons">
+            <button onclick="appendNumber('0')" aria-label="Digit 0">0</button>
+            <button onclick="appendNumber('1')" aria-label="Digit 1">1</button>
+            <button onclick="clearResult()" aria-label="Clear">C</button>
+            <button onclick="calculate()" aria-label="Calculate">=</button>
+            <button onclick="appendOperator('+')" aria-label="Addition">+</button>
+            <button onclick="appendOperator('-')" aria-label="Subtraction">-</button>
+            <button onclick="appendOperator('*')" aria-label="Multiplication">*</button>
+            <button onclick="appendOperator('/')" aria-label="Division">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
